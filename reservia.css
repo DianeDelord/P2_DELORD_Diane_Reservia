@@ -4,6 +4,7 @@ body {
     margin: 0;
     word-wrap: break-word;
     text-decoration: none;
+    background-color: white;
 }
 
 h5,
@@ -365,7 +366,7 @@ h6 {
     font-size: 1em;
     padding: 0;
     margin: 0;
-    line-height: 1.5em;
+    line-height: 1.3em;
 }
 
 .text div p {
@@ -791,20 +792,6 @@ footer a:hover {
     header {
         height: 667px;
     }
-    h5,
-    h4,
-    h3,
-    h2,
-    h6,
-    p,
-    a,
-    figcaption,
-    div,
-    label,
-    form {
-        font-family: 'Raleway', sans-serif;
-        color: black;
-    }
     h3 {
         font-size: 3.5vh;
         padding-bottom: 1vh;
@@ -928,7 +915,7 @@ footer a:hover {
         justify-content: center;
         padding: 1.2em 3em 1.2em 1em;
         font-weight: bold;
-        font-size: 1em;
+        font-size: 0.8em;
         border: solid #f2f2f2 1px;
         height: 51px;
         width: 110%;
@@ -1073,7 +1060,7 @@ footer a:hover {
         width: 100%;
     }
     #ancreHebergement {
-        padding: 1em 0 0 1.5em;
+        padding: 1.5em 0 0 1.5em;
         margin: 0;
     }
     #cardContainer {
@@ -1082,7 +1069,7 @@ footer a:hover {
         justify-content: space-between;
         align-content: space-between;
         width: auto;
-        padding: 2em;
+        padding: 1.5em 2em;
     }
     .cardPictureTop {
         height: 205px;
@@ -1114,9 +1101,6 @@ footer a:hover {
     }
     .text h6 {
         width: 100%;
-    }
-    h6 {
-        font-size: 1em;
     }
     .text div p {
         margin: 2% 0;
