@@ -89,6 +89,7 @@ header .hyperlinkStrip a:hover:before {
 
 h5 {
     font-size: large;
+    margin-bottom: 20px;
 }
 
 .inputField {
@@ -248,30 +249,28 @@ h5 {
 
 /*  résultat recherche */
 
-.info {
-    margin-right: 10px;
-    width: 25px;
-    background: #f2f2f2;
-    height: 25px;
-    text-align: center;
-    border-radius: 100px;
-    border: solid 1px black;
-    line-height: 0px;
-    justify-content: center;
-}
-
-.info p {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-    color: #0065FC;
-    margin-bottom: 2em;
-}
-
 .displayFlexStart {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 5px;
+    margin: 5px 0;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    background: white;
+    height: 25px;
+    text-align: center;
+    border-radius: 100px;
+    border: solid 1px lightgrey;
+    font-family: Times New Roman, Times, serif;
+    font-weight: 600;
+    font-size: large;
+    color: #0065FC;
+    margin-right: 8px;
 }
 
 
@@ -806,9 +805,6 @@ footer a:hover {
         font-family: 'Raleway', sans-serif;
         color: black;
     }
-    h2 {
-        padding-left: 0.6em;
-    }
     h3 {
         font-size: 3.5vh;
         padding-bottom: 1vh;
@@ -896,22 +892,22 @@ footer a:hover {
     /* champ saisie de recherche */
     .intro {
         width: 90%;
-        margin: auto;
+        margin: auto auto auto 20px;
     }
     h5 {
-        font-size: medium;
-        margin-top: 40px;
+        margin: 30px auto 0 0;
         padding: 0;
+        font-size: 1.34em;
     }
     .intro p {
-        font-size: large;
-        margin-bottom: 2em;
+        font-size: medium;
+        margin: 10px auto 35px 0;
     }
     .inputField {
         display: flex;
         height: 75px;
         width: 90%;
-        margin: auto;
+        margin: 0 auto 0 20px;
         flex-direction: row;
         justify-content: center;
         align-items: stretch;
@@ -920,10 +916,11 @@ footer a:hover {
         border-radius: 12px 0 0 12px;
         border: none;
         padding: 0.8em;
-        height: 14px;
+        height: 25px;
         color: black;
         font-weight: bold;
         background-color: #f2f2f2;
+        background-size: 75%;
     }
     .inputField input {
         display: flex;
@@ -933,20 +930,20 @@ footer a:hover {
         font-weight: bold;
         font-size: 1em;
         border: solid #f2f2f2 1px;
-        height: 40px;
-        width: 109%;
+        height: 51px;
+        width: 110%;
     }
     .inputField button {
         border-radius: 12px;
         background-color: #0065FC;
-        background-image: url('images/logo/search-solid.svg');
+        background-image: url(images/logo/search-solid.svg);
         background-repeat: no-repeat;
-        background-size: 35%;
+        background-size: 40%;
         background-position: center;
         margin: auto;
         border: none;
-        height: 40px;
-        width: 40px;
+        height: 51px;
+        width: 51px;
         font-family: 'Raleway', sans-serif;
         font-weight: bold;
     }
@@ -956,11 +953,10 @@ footer a:hover {
     /* Filtres */
     .filters {
         font-weight: bold;
+        margin: 20px 0 auto 20px;
     }
     .filters p {
-        width: 95%;
-        margin: auto;
-        margin-bottom: 1em;
+        margin: 10px 180px 13px 0px;
     }
     .filters form {
         display: flex;
@@ -968,8 +964,8 @@ footer a:hover {
         flex-wrap: wrap;
         justify-content: left;
         align-content: center;
-        width: 100%;
-        margin: auto;
+        margin: 0;
+        max-width: 100%;
     }
     .checkBox {
         display: flex;
@@ -1044,22 +1040,6 @@ footer a:hover {
         left: 140px;
     }
     /*  résultat recherche */
-    .info {
-        margin-right: 10px;
-        width: 25px;
-        background: #f2f2f2;
-        height: 25px;
-        text-align: center;
-        border-radius: 100px;
-        border: solid 1px black;
-        line-height: 0px;
-        justify-content: center;
-    }
-    .info p {
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: bolder;
-        color: #0065FC;
-    }
     .displayFlexStart {
         display: flex;
         justify-content: flex-start;
@@ -1067,7 +1047,8 @@ footer a:hover {
     }
     .resultatsRecherche {
         width: 90%;
-        margin: auto;
+        margin: auto auto auto 20px;
+        align-items: start;
     }
     /* Section 1 Hébergements */
     .twoSections {
@@ -1092,14 +1073,11 @@ footer a:hover {
         width: 100%;
     }
     #ancreHebergement {
-        padding-top: 2em;
-    }
-    .twoSections h2 {
-        margin: 0.5em;
+        padding: 1em 0 0 1.5em;
+        margin: 0;
     }
     #cardContainer {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: space-between;
@@ -1138,7 +1116,7 @@ footer a:hover {
         width: 100%;
     }
     h6 {
-        font-size: large;
+        font-size: 1em;
     }
     .text div p {
         margin: 2% 0;
@@ -1149,9 +1127,9 @@ footer a:hover {
     }
     .containerSectionOne h5 {
         font-size: medium;
-        margin: 0.5em;
+        margin: 0em;
         margin-top: 3px;
-        padding: 0 1em;
+        padding: 0 2em;
     }
     /* Aside - Les plus populaires */
     .containerSectionTwo {
@@ -1159,10 +1137,10 @@ footer a:hover {
         display: flex;
         background-color: #f2f2f2;
         width: auto;
-        height: 615px;
+        height: 650px;
         flex-direction: column;
         border-radius: 0px;
-        padding: 0;
+        padding: 0 2em;
     }
     .containerSectionTwoTitle {
         display: flex;
@@ -1179,8 +1157,7 @@ footer a:hover {
     .containerBox {
         display: flex;
         flex-direction: column;
-        width: 95%;
-        margin: auto;
+        width: auto;
     }
     .containerBox div a {
         width: auto;
@@ -1196,7 +1173,6 @@ footer a:hover {
         overflow: hidden;
         height: 150px;
         width: auto;
-        margin: 0.5em;
     }
     .pictureSide {
         display: flex;
@@ -1207,10 +1183,12 @@ footer a:hover {
     .textSide {
         display: flex;
         flex-direction: column;
-        justify-content: right;
         width: 70%;
-        height: 130px;
+        height: 140px;
         padding-left: 0.8em;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin-bottom: 0.5em;
     }
     .textSide div {
         width: 81%;
@@ -1272,11 +1250,10 @@ footer a:hover {
     }
     .figcaption {
         margin: 0.5em;
-        font: medium;
         font-weight: 600;
         overflow: auto;
         justify-content: left;
-        padding: 1em;
+        padding: 0.7em;
     }
     /* Footer */
     footer {
@@ -1288,7 +1265,7 @@ footer a:hover {
         flex-wrap: wrap;
         align-items: flex-start;
         background-color: #f2f2f2;
-        padding: 1em 1em 2em 1em;
+        padding: 1em 1em 2em 2em;
     }
     footer div {
         width: 80%;
